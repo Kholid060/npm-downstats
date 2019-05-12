@@ -16,7 +16,7 @@ export default {
   components: { 'package-card': PackageCard },
   head(){
     return {
-      title: 'Find or Compare NPM Package Download Statistic'
+      title: 'PackStats - Find or Compare NPM Package Download Statistic'
     }
   },
   data: () => ({
@@ -50,76 +50,9 @@ export default {
           labels: that.downloads.map(download => download.day)
         }
         this.chartData.push(tempData)
-        console.log(tempData)
         tempData = {}
       }
   }
 }
 
 </script>
-<style>
-@keyframes slideIn {
-  0% {
-    transform: translateY(30px);
-    opacity: 0
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 100
-  }
-}
-
-.home-card {
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12) !important;
-  overflow: hidden;
-  animation: .5s ease-out 0s 1 slideIn;
-}
-
-.home-card:hover {
-  box-shadow: none !important;
-}
-
-.mode-select .v-btn--active {
-  background-color: #03a9f4;
-  color: white !important;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12) !important;
-}
-
-.mode-select {
-  box-shadow: none;
-  border-radius: 5px !important;
-}
-
-.mode-select button:first-child {
-  border-radius: 5px 0 0 5px !important;
-}
-
-.mode-select button:last-child {
-  border-radius: 0 5px 5px 0 !important;
-}
-
-.mode-select button {
-  width: 100px !important;
-  height: 45px;
-}
-
-.search-button {
-  height: 56px;
-  width: 140px !important;
-  border-radius: 5px;
-}
-
-.search-form .v-input__control .v-input__slot {
-  border: 1px solid #d5d5d5 !important;
-  border-radius: 5px !important;
-  transition: all .5s ease;
-}
-
-.search-form .v-input__control .v-input__slot:hover {
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12) !important;
-}
-
-</style>

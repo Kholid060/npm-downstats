@@ -32,15 +32,3 @@ export default {
 }
 
 </script>
-<style>
-.embed-button {
-  right: 10%;
-}
-
-.custom-form-embed .v-input__control .v-input__slot {
-  border: none !important;
-  border-radius: 5px !important;
-  background-color: #f4f4f4 !important;
-}
-
-</style>

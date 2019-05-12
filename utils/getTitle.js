@@ -13,5 +13,5 @@ let capitalize = (val) => {
 }
 
 module.exports = (a) => {
-	return a.length === 1 ? `${capitalize(a[0])} Download Statistics` : `Compare ${capitalize(arrayToSentence(a))} Download Statistics`
+	return a.length === 1 ? `${capitalize(a[0])} Download Statistics - PackStats` : `Compare ${capitalize(arrayToSentence(a))} Download Statistics - PackStats`
 }

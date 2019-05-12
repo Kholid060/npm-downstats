@@ -74,11 +74,3 @@ export default {
 }
 
 </script>
-<style>
-.apexcharts-title-text {
-  font-weight: 500;
-  font-family: Roboto !important;
-  font-size: 17px;
-}
-
-</style>

@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nodemon --watch api --exec \"nuxt\"",
     "build": "nuxt build",
-    "start": "cross-env NODE_ENV=production node server/index.js",
+    "start": "nuxt start",
+    "heroku-postbuild": "npm run build",
     "generate": "nuxt generate"
   },
   "dependencies": {

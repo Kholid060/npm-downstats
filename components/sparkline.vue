@@ -16,16 +16,3 @@ export default {
 }
 
 </script>
-<style>
-.sparkline-card {
-  position: absolute !important;
-  bottom: -7px;
-  width: 105%;
-  left: -5px;
-}
-
-.sparkline-card path {
-  stroke: #03a9f496;
-}
-
-</style>

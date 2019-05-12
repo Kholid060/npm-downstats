@@ -7,7 +7,7 @@ module.exports = ({ url, width, height }) => {
     type: 'rich',
     version: '1.0',
     provider_name: 'Packstats',
-    provider_url: 'https://packstats.netlify.com/',
+    provider_url: 'https://packstats.herokuapp.com/',
     title: getTitle(package),
     width: width,
     height: height,

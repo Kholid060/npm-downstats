@@ -64,13 +64,3 @@ export default {
 }
 
 </script>
-<style>
-.date-picker-form {
-  max-width: 20%;
-}
-
-.swith-range {
-  max-width: 10% !important;
-}
-
-</style>

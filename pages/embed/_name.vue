@@ -26,6 +26,14 @@ import { formatNumber, dateFormatter, groupData, removeDuplicate } from '../../u
 export default {
   components: {apexchart: () => import('vue-apexcharts')},
   layout: 'embed',
+  head(){
+    return {
+      title: getTitle(this.$route.params.name.split(',')),
+      meta: [
+        { title: getTitle(this.$route.params.name.split(',')), rel: 'alternate', type: 'application/json+oembed', href: '/api/oembed?url=' + this.$route.fullPath }
+      ]
+    }
+  },
   data () {
     return {
       data: [],
