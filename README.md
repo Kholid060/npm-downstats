@@ -1,4 +1,4 @@
-# npm
+# NPM-Downstats
 
 > My rad Nuxt.js project
 
