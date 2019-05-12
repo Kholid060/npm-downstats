@@ -6,8 +6,8 @@ module.exports = ({ url, width, height }) => {
   return {
     type: 'rich',
     version: '1.0',
-    provider_name: '',
-    provider_url: '',
+    provider_name: 'Packstats',
+    provider_url: 'https://packstats.netlify.com/',
     title: getTitle(package),
     width: width,
     height: height,

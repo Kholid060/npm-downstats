@@ -1,7 +1,7 @@
 {
-  "name": "npm",
+  "name": "Packstats",
   "version": "1.0.0",
-  "description": "My rad Nuxt.js project",
+  "description": "Find or Compare NPM Package Download Statistic",
   "author": "kholid060",
   "private": true,
   "scripts": {
@@ -14,13 +14,10 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "apexcharts": "^3.6.10",
-    "array-to-sentence": "^2.0.0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "express-vue": "^5.8.2",
     "moment": "^2.24.0",
     "nuxt": "^2.4.0",
-    "nuxt-express-module": "^0.0.11",
     "path-match": "^1.2.4",
     "vue-apexcharts": "^1.3.5",
     "vuetify": "^1.5.5",

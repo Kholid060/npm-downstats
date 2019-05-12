@@ -18,7 +18,7 @@ export default {
 </script>
 <style>
 .sparkline-card {
-  position: absolute;
+  position: absolute !important;
   bottom: -7px;
   width: 105%;
   left: -5px;
