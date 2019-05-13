@@ -6,7 +6,7 @@ const route = require('path-match')({
   end: false,
 });
 
-const match = route('/package/:packages([^/]+[/]*[^/]+)')
+const match = route('/embed/:packages([^/]+[/]*[^/]+)')
 
 module.exports = a => {
   const parsedUrl = url.parse(a)

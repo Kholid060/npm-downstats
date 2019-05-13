@@ -23,6 +23,7 @@
 </template>
 <script>
 import { formatNumber, dateFormatter, groupData, removeDuplicate } from '../../utils/formatter'
+const getTitle = require('../../utils/getTitle')
 export default {
   components: {apexchart: () => import('vue-apexcharts')},
   layout: 'embed',
@@ -37,6 +38,7 @@ export default {
   data () {
     return {
       data: [],
+      typeData: 'day',
       chartType: 'area',
       packages: [],
       loaded: false,
@@ -118,8 +120,7 @@ export default {
         this.pushData(data, type)
       }
       let a = type === 'day' ? 'beauty' : type
-      let day = this.data[0].data.map(e => e.day)
-      let title = [day[0], day[day.length - 1]]
+      let title = [data.start, data.end]
       this.options.title.text = title.map(e => dateFormatter(e, a)).reduce(removeDuplicate, []).join(' - ')
       this.chartType = this.data[0].data.length > 1 ? 'area' : 'bar'
       this.loaded = true
