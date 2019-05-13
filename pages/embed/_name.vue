@@ -31,7 +31,7 @@ export default {
     return {
       title: getTitle(this.$route.params.name.split(',')),
       meta: [
-        { title: getTitle(this.$route.params.name.split(',')), rel: 'alternate', type: 'application/json+oembed', href: 'https://packstats.herokuapp.com/api/oembed?url=' + this.$route.fullPath }
+        { title: getTitle(this.$route.params.name.split(',')), rel: 'alternate', type: 'application/json+oembed', href: '/api/oembed?url=' + this.$route.fullPath }
       ]
     }
   },
