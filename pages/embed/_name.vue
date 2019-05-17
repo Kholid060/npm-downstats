@@ -31,13 +31,14 @@ export default {
     return {
       title: getTitle(this.$route.params.name.split(',')),
       meta: [
-        { title: getTitle(this.$route.params.name.split(',')), rel: 'alternate', type: 'application/json+oembed', href: '/api/oembed?url=' + this.$route.fullPath }
+        { title: getTitle(this.$route.params.name.split(',')), rel: 'alternate', type: 'application/json+oembed', href: `${this.domain}/api/oembed?url=${this.domain}${this.$route.fullPath}` }
       ]
     }
   },
   data () {
     return {
       data: [],
+      domain:'https://packstats.herokuapp.com',
       typeData: 'day',
       chartType: 'area',
       packages: [],

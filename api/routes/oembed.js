@@ -10,7 +10,7 @@ router.get('/oembed', function (req, res, next) {
 	let urlQuery = req.query.url
 	if(urlQuery){
 	  let embed = oembedObject({
-	    url: 'https://packstats.herokuapp.com'+urlQuery,
+	    url: urlQuery,
 	    width: req.query.width || 700,
 	    height: req.query.height || 500
 	  })
