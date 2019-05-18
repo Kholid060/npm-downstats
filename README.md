@@ -1,6 +1,10 @@
-# NPM-Downstats
+# Packstats
 
-> My rad Nuxt.js project
+> Generate download statistic chart for your NPM package
+
+## Visit
+
+[https://packstats.herokuapp.com](https://packstats.herokuapp.com)
 
 ## Build Setup
 
