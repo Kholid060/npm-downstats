@@ -6,7 +6,7 @@
     <div class="content" v-else>
       <v-layout row wrap v-if="loaded">
         <v-flex md12>
-          <embed-button></embed-button>
+          <!-- <embed-button></embed-button> -->
           <v-container grid-list-xl pt-0>
             <v-layout row wrap justify-center align-center style="height: 300px">
               <v-flex md3 v-for="data in data.day.charts" :key="data.name" @click="npmLink(data.name)">
@@ -39,13 +39,21 @@ import PackageCard from '../../components/package-card.vue'
 import moment from 'moment'
 import { groupData, removeDuplicate, dateFormatter } from '../../utils/formatter'
 import Bus from '../../utils/bus'
-import EmbedButton from '../../components/embed-button.vue'
+// import EmbedButton from '../../components/embed-button.vue'
 const getTitle = require('../../utils/getTitle')
 export default {
   components: {
     'package-card': PackageCard,
-    'embed-button': EmbedButton,
+    // 'embed-button': EmbedButton,
     'chart': () => import('../../components/chart')
+  },
+  head(){
+    return {
+      title: getTitle(this.$route.params.name.split(',')),
+      meta: [
+        { name: 'og:title', content: getTitle(this.$route.params.name.split(',')) }
+      ]
+    }
   },
   data: () => ({
     loaded: false,

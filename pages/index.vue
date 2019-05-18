@@ -28,8 +28,8 @@ export default {
     },
     packageLogo (name) {
       switch (name) {
-        case 'vue':
-          return 'https://vuejs.org/images/logo.png'
+        case 'nuxt':
+          return 'https://nuxtjs.org/meta_400.png'
           break
         case 'vuetify':
           return 'https://cdn.vuetifyjs.com/images/logos/v-alt.svg'
@@ -41,7 +41,7 @@ export default {
     }
   },
   async mounted () {
-      let data = await this.$axios.$get('https://api.npmjs.org/downloads/range/last-week/vue,vuetify,apexcharts')
+      let data = await this.$axios.$get('https://api.npmjs.org/downloads/range/last-week/nuxt,vuetify,apexcharts')
       for (const key in data) {
         let that = data[key]
         let tempData = {
